@@ -10,7 +10,7 @@
 - Jetpack Compose
 - Material3 and dynamic colors with Google Design Guidelines
 - SqlDelight Database 
-- 
+  
 
 
   
