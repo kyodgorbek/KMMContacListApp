@@ -20,12 +20,12 @@ import com.example.kmmcontacllistapp.contacts.domain.Contact
 fun RecentlyAddedContacts(
     contacts: List<Contact>,
     onClick: (Contact) -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
     Column(
         modifier = modifier
     ) {
-        if(contacts.isNotEmpty()) {
+        if (contacts.isNotEmpty()) {
             Text(
                 text = "Recently Added",
                 modifier = Modifier

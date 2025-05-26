@@ -7,7 +7,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.runtime.Composable
 
 actual class ImagePicker(
-    private val activity: ComponentActivity
+    private val activity: ComponentActivity,
 ) {
     private lateinit var getContent: ActivityResultLauncher<String>
 

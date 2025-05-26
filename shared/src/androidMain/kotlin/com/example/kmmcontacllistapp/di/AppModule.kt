@@ -8,7 +8,7 @@ import com.example.kmmcontacllistapp.core.data.ImageStorage
 import com.example.kmmcontacllistapp.database.ContactDatabase
 
 actual class AppModule(
-    private val context: Context
+    private val context: Context,
 ) {
 
     actual val contactDataSource: ContactDataSource by lazy {

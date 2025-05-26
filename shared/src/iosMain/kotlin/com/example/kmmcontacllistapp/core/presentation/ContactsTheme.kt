@@ -10,7 +10,7 @@ import com.example.kmmcontacllistapp.ui.theme.Typography
 actual fun ContactsTheme(
     darkTheme: Boolean,
     dynamicColor: Boolean,
-    content: @Composable () -> Unit
+    content: @Composable () -> Unit,
 ) {
     MaterialTheme(
         colorScheme = if (darkTheme) DarkColorScheme else LightColorScheme,

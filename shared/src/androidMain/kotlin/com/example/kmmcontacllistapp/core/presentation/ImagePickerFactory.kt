@@ -4,7 +4,6 @@ import androidx.activity.ComponentActivity
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
-import com.example.kmmcontacllistapp.core.presentation.ImagePicker
 
 actual class ImagePickerFactory {
 

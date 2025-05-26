@@ -23,12 +23,12 @@ import com.example.kmmcontacllistapp.core.presentation.rememberBitmapFromBytes
 fun ContactPhoto(
     contact: Contact?,
     modifier: Modifier = Modifier,
-    iconSize: Dp = 25.dp
+    iconSize: Dp = 25.dp,
 ) {
     val bitmap = rememberBitmapFromBytes(contact?.photoBytes)
     val photoModifier = modifier.clip(RoundedCornerShape(35))
 
-    if(bitmap != null) {
+    if (bitmap != null) {
         Image(
             bitmap = bitmap,
             contentDescription = contact?.firstName,

@@ -14,7 +14,7 @@ import com.example.kmmcontacllistapp.contacts.domain.Contact
 @Composable
 fun ContactListItem(
     contact: Contact,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
     Row(
         modifier = modifier,

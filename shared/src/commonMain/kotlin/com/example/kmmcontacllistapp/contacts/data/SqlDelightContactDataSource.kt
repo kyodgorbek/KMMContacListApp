@@ -15,7 +15,7 @@ import kotlinx.datetime.Clock
 
 class SqlDelightContactDataSource(
     db: ContactDatabase,
-    private val imageStorage: ImageStorage
+    private val imageStorage: ImageStorage,
 ) : ContactDataSource {
 
     private val queries = db.contactQueries

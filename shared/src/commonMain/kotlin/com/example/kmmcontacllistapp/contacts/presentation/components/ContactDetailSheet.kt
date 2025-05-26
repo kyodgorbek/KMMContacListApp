@@ -43,7 +43,7 @@ fun ContactDetailSheet(
     isOpen: Boolean,
     selectedContact: Contact?,
     onEvent: (ContactListEvent) -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
     BottomSheetFromWish(
         visible = isOpen,
@@ -116,7 +116,7 @@ fun ContactDetailSheet(
 private fun EditRow(
     onEditClick: () -> Unit,
     onDeleteClick: () -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
     Row(modifier) {
         FilledTonalIconButton(
@@ -151,7 +151,7 @@ private fun ContactInfoSection(
     title: String,
     value: String,
     icon: ImageVector,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
     Row(
         modifier = modifier,

@@ -37,7 +37,7 @@ fun AddContactSheet(
     newContact: Contact?,
     isOpen: Boolean,
     onEvent: (ContactListEvent) -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
     BottomSheetFromWish(
         visible = isOpen,
@@ -52,7 +52,7 @@ fun AddContactSheet(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Spacer(Modifier.height(60.dp))
-                if(newContact?.photoBytes == null) {
+                if (newContact?.photoBytes == null) {
                     Box(
                         modifier = Modifier
                             .size(150.dp)
@@ -155,7 +155,7 @@ private fun ContactTextField(
     placeholder: String,
     error: String?,
     onValueChanged: (String) -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
     Column(modifier) {
         OutlinedTextField(
@@ -167,7 +167,7 @@ private fun ContactTextField(
             shape = RoundedCornerShape(20.dp),
             modifier = Modifier.fillMaxWidth()
         )
-        if(error != null) {
+        if (error != null) {
             Text(
                 text = error,
                 color = MaterialTheme.colorScheme.error

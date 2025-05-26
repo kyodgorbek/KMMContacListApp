@@ -16,7 +16,7 @@ import com.example.kmmcontacllistapp.contacts.domain.Contact
 fun ContactPreviewItem(
     contact: Contact,
     onClick: () -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
     Column(
         modifier = modifier
